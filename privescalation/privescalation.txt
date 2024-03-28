@@ -1,0 +1,4 @@
+Here in insecure version the there is no check whether the user is logged in or not. 
+Any user without authentication can change or manipulate the role of the user.
+
+In secure version session management is present leading to update-role happening only if there is an active session.

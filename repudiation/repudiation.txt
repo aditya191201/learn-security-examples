@@ -1,2 +1,9 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+In the insecure version it is very difficult to track the mallicious user who is actively doing malicious activities. 
+
+In the secure version we create a log of all the activities whenever the user posts or retrieves 
+any messages or simply call an API. IP address along with date and time is logged locally on the server. 
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+We can have access control mechanisms as well as have digital signatures to be sent with the request to the server. 
+Have session management in place.

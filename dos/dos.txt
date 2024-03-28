@@ -1,2 +1,7 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerability is that invalid input id causes the server to crash leading to denial of service. 
+Use of try catch blocks in secure version prevents the server to crash thereby handling errors efficiently. 
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Sanitizing the inputs before processing it further and having session management in place.
