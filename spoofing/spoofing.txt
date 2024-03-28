@@ -1,1 +1,7 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerability was that the session id could have been spoofed easily. 
+In the secured version the session was set to http only thereby accepting requests from http source only. 
+Also sameSite was made true so that only same server was allowed to request data from APIs. 
+
+Spoofing violates Confidentiality from CIA properties. 

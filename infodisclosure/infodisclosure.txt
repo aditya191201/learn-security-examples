@@ -1,3 +1,10 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
-Which CIA property does tampering violate?
+In insecure.js mongodb queries (SQL Injection) could be passed as input for username which can lead to exposure of data to mallicious user. 
+
+In secure version we sanitize the input and then pass it to the mongoose query. 
+
+Which CIA property does info disclosure violate?
+Confidentiality property is violated.
+
 What additional security mechanisms can you incorporate?
+Use of session to login along with token like jwt tokens so that data is accessible only to authorized users. 

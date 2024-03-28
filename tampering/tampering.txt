@@ -1,0 +1,8 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+In the insecure version we are directly using the user input from req.params without sanitizing it. 
+Without sanitizing any malicious user can inject scripts which can modify our data or change its behaviour. 
+
+In the secure version we sanitize the input and remove any hidden html or javascript embedded in the input. 
+
+Tampering violates Integrity propery of CIA. 
